@@ -1,0 +1,1135 @@
+/*
+Template Name: blaked
+Theme URL: http://www.egotype.com/blaked/
+Description: Landing Page
+Author: Egotype
+Author URL: http://www.egotype.com
+Version: 1.0
+Tags: Landing Page, HTML5, CSS3, Bootstrap, Jquery, Portfolio Landing page,
+CV Landing page, Resume Landing page
+*/
+
+/* ___________________________________________
+
+                   CONTENT
+   ___________________________________________ */
+
+/*   01. General Styles                        */
+/*   02. Typography                            */
+/*   03. Backgrounds                           */
+/*   04. Buttons, Links                        */
+/*   05. Forms                                 */
+/*   06. Spacing, Alignment, Helperclasses     */
+/*   07. Header Navigation                     */
+/*   08. Hero Section                          */
+/*   09. Skills Section                        */
+/*   10. Portfolio Section                     */
+/*   11. Experience Section                    */
+/*   12. Counter Section                       */
+/*   13. Twitter Section                       */
+/*   14. Footer Section                        */
+
+/* _____________________________________
+
+   01. General Styles
+   _____________________________________ */
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-ExtraLight.woff") format("woff"),
+  url("../fonts/montserrat/Montserrat-ExtraLight.woff2") format("woff2"),
+  url("../fonts/montserrat/Montserrat-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat/Montserrat-Bold.woff") format("woff"),
+  url("../fonts/montserrat/Montserrat-Bold.woff2") format("woff2"),
+  url("../fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: #a4a7a8;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 1px solid #a4a7a8;
+}
+
+hr.hr-dark {
+  border-color: #676c6e;
+}
+
+hr.hr-light {
+  border-color: #a4a7a8;
+}
+
+hr.hr-color {
+  border-color: #e53511;
+}
+
+.circles span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  line-height: 1;
+  border: 1px solid #e53511;
+  border-radius: 50%;
+}
+
+.circles span:first-child {
+  margin-left: 0;
+}
+
+.circles span:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  background: url("../images/logo-mh.svg") no-repeat center;
+  background-size: cover;
+  width: 45px;
+  height: 28px;
+}
+
+/* ----------------------------------
+   Bootstrap Fix: IE10
+   in Windows 8 & Windows Phone 8
+   ---------------------------------- */
+
+@-webkit-viewport {
+  width: device-width;
+}
+
+@-moz-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* _____________________________________
+
+   02. Typography
+   _____________________________________ */
+
+.h1, .h2, .h3, h1, h2, h3 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1, .h1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+h2, .h2 {
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+h3, .h3 {
+  font-size: 19px;
+  font-weight: 200;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+h4, .h4 {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+
+h5, .h5 {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+h6, .h6 {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p, .lead {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+.ls-01 {
+  letter-spacing: 0.1em;
+}
+
+.ls-02 {
+  letter-spacing: 0.2em;
+}
+
+.icon-lg {
+  font-size: 48px;
+}
+
+/* ----------------------------------
+   Font Colors
+   ---------------------------------- */
+
+.text-color {
+  color: #e53511;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-dark {
+  color: #424242;
+}
+
+/* _____________________________________
+
+   03. Backgrounds
+   _____________________________________ */
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-light {
+  background-color: #a4a7a8;
+}
+
+.bg-color {
+  background-color: #e53511;
+}
+
+.bg-dark {
+  background-color: #424242;
+}
+
+.opacity-90 {
+  filter: alpha(opacity=85);
+  opacity: 0.85;
+}
+
+/* _____________________________________
+
+   04. Buttons, Links
+   _____________________________________ */
+
+a {
+  color: #a4a7a8;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #e53511;
+  text-decoration: underline;
+  outline: none;
+}
+
+.btn,
+a.btn {
+  display: inline-block;
+  margin: 5px !important;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border-radius: 0;
+  border: none;
+  transition: background .3s ease-in-out;
+}
+
+.btn:active,
+a.btn:active {
+  box-shadow: none;
+}
+
+.linkDiv {
+  cursor: pointer;
+}
+
+/* ----------------------------------
+   Social Buttons
+   ---------------------------------- */
+
+.social span {
+  margin: 0 5px;
+  line-height: 1;
+}
+
+/* ----------------------------------
+   Links Color
+   ---------------------------------- */
+
+a.link-color {
+  color: #e53511;
+  text-decoration: none;
+}
+
+a.link-color:hover,
+a.link-color:active,
+a.link-color:focus {
+  color: #e53511;
+  text-decoration: underline;
+}
+
+/* ----------------------------------
+   Buttons Color
+   ---------------------------------- */
+
+.btn-color,
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus,
+a.btn-color,
+a.btn-color:hover,
+a.btn-color:active,
+a.btn-color:focus {
+  color: #fff;
+  background-color: #e53511;
+}
+
+.btn-border-color,
+a.btn-border-color,
+.btn-border-color-dark,
+a.btn-border-color-dark {
+  color: #e53511;
+  background-color: transparent;
+  border: 1px solid #e53511;
+}
+
+.btn-border-color:hover,
+.btn-border-color:active,
+.btn-border-color:focus,
+a.btn-border-color:hover,
+a.btn-border-color:active,
+a.btn-border-color:focus {
+  color: #fff;
+  background-color: #e53511;
+}
+
+.btn-border-color-dark:hover,
+.btn-border-color-dark:active,
+.btn-border-color-dark:focus,
+a.btn-border-color-dark:hover,
+a.btn-border-color-dark:active,
+a.btn-border-color-dark:focus {
+  color: #424242;
+  background-color: #e53511;
+}
+
+/* _____________________________________
+
+   05. Forms
+   _____________________________________ */
+
+.form-control {
+  height: 40px;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #a4a7a8;
+  border-radius: 0;
+  border-color: #a4a7a8;
+  box-shadow: none;
+  appearance: none;
+  outline: 0;
+}
+
+textarea.form-control {
+  border-radius: 0;
+  resize: none;
+}
+
+.form-control:focus {
+  border-color: #e53511;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-control:-moz-placeholder {
+  color: #c2c4c5;
+}
+
+.form-control::-moz-placeholder {
+  color: #c2c4c5;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #c2c4c5;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #c2c4c5;
+}
+
+.error .form-control:-moz-placeholder {
+  color: #e53511;
+}
+
+.error .form-control::-moz-placeholder {
+  color: #e53511;
+}
+
+.error .form-control:-ms-input-placeholder {
+  color: #e53511;
+}
+
+.error .form-control::-webkit-input-placeholder {
+  color: #e53511;
+}
+
+/* ----------------------------------
+   Form Color
+   ---------------------------------- */
+
+.form-control-color {
+  background-color: transparent;
+  border: 1px solid #e53511;
+}
+
+/* ----------------------------------
+   Validation Message
+   ---------------------------------- */
+
+#message-contact {
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  padding: 15px 0;
+  bottom: 0;
+  z-index: 1030;
+}
+
+#message-contact {
+  background-color: #8bc34a;
+}
+
+#message-contact.error {
+  background-color: #e53511;
+}
+
+.message {
+  margin: 0 auto;
+}
+
+.message-icon {
+  display: block;
+  height: 30px;
+  width: 30px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.message-white {
+  color: #fff;
+}
+
+.message-icon-white {
+  border: 1px solid #fff;
+}
+
+.message-icon-dark {
+  border: 1px solid #424242;
+}
+
+.message-icon i {
+  line-height: 30px;
+}
+
+.message span {
+  display: inline-block;
+}
+
+.message-text {
+  margin: 10px 5px;
+  font-weight: 400;
+}
+
+/* ----------------------------------
+   Loader
+   ---------------------------------- */
+
+.loader {
+  position: fixed;
+  z-index: 1200;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ball-pulse-color > div {
+  background-color: transparent;
+  border: 1px solid #e53511;
+}
+
+.ball-pulse-sync > div, .ball-pulse > div {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+}
+
+/* _____________________________________
+
+   06. Spacing, Alignment, Helperclasses
+   _____________________________________ */
+
+.vert-middle {
+  display: table;
+  height: 100%;
+}
+
+.vert-middle > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.vert-bottom {
+  display: table;
+  height: 100%;
+}
+
+.vert-bottom > div {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.vert-flex-sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.h-225 {
+  height: 225px;
+}
+
+.p-t-b-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.p-t-b-15 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.p-t-b-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.p-t-b-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.m-t-15-neg {
+  margin-top: -15px;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.line-3-overflow {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* _____________________________________
+
+   07. Header Navigation
+   _____________________________________ */
+
+/* ----------------------------------
+   Navbar Icon
+   ---------------------------------- */
+
+.navbar-button {
+  position: relative;
+
+}
+
+.navbar-button {
+  cursor: pointer;
+  width: 30px;
+  height: 19px;
+  margin: 5px 0;
+}
+
+.navbar-button span {
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #e53511;
+  border-radius: 9px;
+  filter: alpha(opacity=100);
+  opacity: 1;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.navbar-button span:nth-child(1) {
+  top: 0;
+}
+
+.navbar-button span:nth-child(2) {
+  top: 8px;
+}
+
+.navbar-button span:nth-child(3) {
+  top: 16px;
+}
+
+.navbar-button.open span:nth-child(1) {
+  top: 8px;
+  transform: rotate(135deg);
+}
+
+.navbar-button.open span:nth-child(2) {
+  left: -40px;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.navbar-button.open span:nth-child(3) {
+  top: 8px;
+  transform: rotate(-135deg);
+}
+
+header {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  z-index: 1030;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeUp;
+  animation-name: fadeUp;
+  transition: all 0.3s ease-in-out;
+}
+
+header.scroll {
+  animation-duration: 0.7s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, -100%, 0);
+    opacity: 0;
+  }
+}
+
+.sidebar {
+  display: none;
+}
+
+.sidebar li:before {
+  position: absolute;
+  top: 17px;
+  right: auto;
+  left: 0;
+  content: "\A";
+  width: 10px;
+  height: 10px;
+  background-color: #e53511;
+  border: 1px solid #e53511;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar > li.active:before {
+  background-color: transparent;
+}
+
+.sidebar > li > a {
+  padding-left: 30px;
+  color: #a4a7a8;
+}
+
+.sidebar > li.active > a,
+.sidebar > li > a:hover,
+.sidebar > li > a:focus {
+  color: #e53511;
+  background-color: transparent;
+}
+
+/* _____________________________________
+
+   08. Hero Section
+   _____________________________________ */
+
+.hero-content {
+  height: 100vh;
+  min-height: 700px;
+}
+
+.section-overlay {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  min-height: 700px;
+  width: 100%;
+}
+
+.hero-video img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.hero-video,
+.hero-slider {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  min-height: 700px;
+  height: 100vh;
+}
+
+.hero-image-light {
+  background: url("../images/placeholder-hero.jpg") no-repeat top;
+}
+
+.hero-image-dark {
+  background: url("../images/placeholder-hero-dark.jpg") no-repeat top;
+}
+
+.hero-slide-1-light {
+  background-image: url("../images/placeholder-2400-1450.jpg");
+}
+
+.hero-slide-2-light {
+  background-image: url("../images/placeholder-2400-1450.jpg");
+}
+
+.hero-slide-3-light {
+  background-image: url("../images/placeholder-2400-1450.jpg");
+}
+
+.hero-slide-1-dark {
+  background-image: url("../images/placeholder-2400-1450.jpg");
+}
+
+.hero-slide-2-dark {
+  background-image: url("../images/placeholder-2400-1450.jpg");
+}
+
+.hero-slide-3-dark {
+  background-image: url("../images/placeholder-2400-1450.jpg");
+}
+
+.hero-image {
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  min-height: 700px;
+}
+
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* _____________________________________
+
+   09. Skills Section
+   _____________________________________ */
+
+dl.dl-horizontal.dl-horizontal-250 {
+  margin-bottom: 0;
+}
+
+.dl-horizontal-250.dl-horizontal dt {
+  width: 250px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.dl-horizontal-250.dl-horizontal dd {
+  text-align: right;
+}
+
+.progress {
+  height: 3px;
+  margin: 10px 0 30px 0;
+  background-color: #c8cacb;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.progress-bar {
+  height: 3px;
+  background-color: #e53511;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* _____________________________________
+
+   10. Portfolio Section
+   _____________________________________ */
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.portfolio-border {
+  border: 1px solid #e53511;
+}
+
+.portfolio-border:nth-child(2) {
+  border-top: none;
+}
+
+.portfolio-shadow-light {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-shadow-light:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-shadow-dark {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.portfolio-shadow-dark:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+}
+
+/* _____________________________________
+
+   11. Experience Section
+   _____________________________________ */
+
+.timeline {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.timeline > div {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.timeline .marker,
+.timeline .content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.timeline:before {
+  content: "\A";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #d1d1d1;
+  opacity: 1;
+}
+
+.timeline .marker:before {
+  content: "\A";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  padding: 3px;
+  margin-top: -6px;
+  margin-left: -5px;
+  background-clip: content-box;
+  background-color: #a4a7a8;
+  border-radius: 50%;
+  border: 1px solid #a4a7a8;
+}
+
+.timeline .marker.filled:before {
+  background-color: #e53511;
+  border: solid 1px #e53511;
+}
+
+.timeline .marker.l-100-sm:before {
+  left: 0;
+  margin-left: -5px;
+}
+
+/* _____________________________________
+
+   12. Counter Section
+   _____________________________________ */
+
+.counter {
+  margin-bottom: 10px;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.quotes {
+  margin-bottom: 0;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+/* _____________________________________
+
+   13. Twitter Section
+   _____________________________________ */
+
+.tweet {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.tweet:after {
+  content: ".";
+  border-bottom: 1px solid #e53511;
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ----------------------------------
+   Owl Slider
+   ---------------------------------- */
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 20px;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  display: block;
+  height: 10px;
+  width: 10px;
+  margin: 4px 3px;
+  background-color: transparent;
+  border: 1px solid #e53511;
+  border-radius: 50%;
+  transition: opacity 200ms ease;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #e53511;
+}
+
+.owl-carousel a {
+  color: #e53511;
+}
+
+/* _____________________________________
+
+   14. Footer Section
+   _____________________________________ */
+
+footer {
+  border-top: 1px solid #a4a7a8;
+}
+
+.post-date {
+  margin-bottom: 20px;
+}
+
+img.media-object {
+  width: 100px;
+  height: 100px;
+}
+
+.media-heading {
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.media-left {
+  padding-right: 30px;
+}
+h4, .h4 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+
+
+.timeline .marker.l-100-sm::before {
+  left: 0;
+  margin-left: -5px;
+  background: transparent;
+  border: transparent;
+
+}
+.p-b-40{
+  padding-bottom: 40px
+}
+.m-l-50{
+  margin-left: 50px;
+}
+.list-contact{
+  list-style: none;
+  padding: 40px 0 0 0;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-style: italic;
+}
+.logo {
+  background: url("../images/logo-mh.svg") no-repeat center;
+  background-size: cover;
+  width: 45px;
+  height: 28px;
+}

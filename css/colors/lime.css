@@ -1,0 +1,153 @@
+hr.hr-color {
+  border-color: #afb42b;
+}
+
+.circles span {
+  border-color: #afb42b;
+}
+
+.logo {
+  background-image: url("../../images/logo-lime.png");
+}
+
+.text-color {
+  color: #afb42b;
+}
+
+.bg-color {
+  background-color: #afb42b;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #afb42b;
+}
+
+a.link-color {
+  color: #afb42b;
+}
+
+a.link-color:hover,
+a.link-color:active,
+a.link-color:focus {
+  color: #afb42b;
+}
+
+a.link-light:hover,
+a.link-light:active,
+a.link-light:focus {
+  color: #afb42b;
+}
+
+.btn-color,
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus,
+a.btn-color,
+a.btn-color:hover,
+a.btn-color:active,
+a.btn-color:focus {
+  background-color: #afb42b;
+}
+
+.btn-border-color:hover,
+.btn-border-color:active,
+.btn-border-color:focus,
+a.btn-border-color:hover,
+a.btn-border-color:active,
+a.btn-border-color:focus,
+.btn-border-color-dark:hover,
+.btn-border-color-dark:active,
+.btn-border-color-dark:focus,
+a.btn-border-color-dark:hover,
+a.btn-border-color-dark:active,
+a.btn-border-color-dark:focus {
+  background-color: #afb42b;
+}
+
+.btn-border-color:hover,
+.btn-border-color:active,
+.btn-border-color:focus,
+a.btn-border-color:hover,
+a.btn-border-color:active,
+a.btn-border-color:focus {
+  background-color: #afb42b;
+}
+
+.form-control:focus {
+  border-color: #afb42b;
+}
+
+.error .form-control:-moz-placeholder {
+  color: #afb42b;
+}
+
+.error .form-control::-moz-placeholder {
+  color: #afb42b;
+}
+
+.error .form-control:-ms-input-placeholder {
+  color: #afb42b;
+}
+
+.error .form-control::-webkit-input-placeholder {
+  color: #afb42b;
+}
+
+.form-control-color {
+  background-color: transparent;
+  border: 1px solid #afb42b;
+}
+
+#message-contact.error {
+  background-color: #afb42b;
+}
+
+.ball-pulse-color > div {
+  border-color: #afb42b;
+}
+
+.sidebar li:before {
+  background-color: #afb42b;
+  border-color: #afb42b;
+}
+
+.sidebar > li.active > a,
+.sidebar > li > a:hover {
+  color: #afb42b;
+}
+
+.navbar-button span {
+  background-color: #afb42b;
+}
+
+.progress-bar {
+  background-color: #afb42b;
+}
+
+.portfolio-border {
+  border-color: #afb42b;
+}
+
+.timeline .marker.filled:before {
+  background-color: #afb42b;
+  border-color: #afb42b;
+}
+
+.tweet:after {
+  border-color: #afb42b;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  border-color: #afb42b;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #afb42b;
+}
+
+.owl-carousel a {
+  color: #afb42b;
+}

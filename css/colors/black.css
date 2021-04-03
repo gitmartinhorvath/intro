@@ -1,0 +1,152 @@
+hr.hr-color {
+  border-color: #000;
+}
+
+.circles span {
+  border-color: #000;
+}
+
+.logo {
+  background-image: url("../../images/logo-black.png");
+}
+
+.text-color {
+  color: #000;
+}
+
+.bg-color {
+  background-color: #000;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #000;
+}
+
+a.link-color {
+  color: #000;
+}
+
+a.link-color:hover,
+a.link-color:active,
+a.link-color:focus {
+  color: #000;
+}
+
+a.link-light:hover,
+a.link-light:active,
+a.link-light:focus {
+  color: #000;
+}
+
+.btn-color,
+.btn-color:hover,
+.btn-color:active,
+.btn-color:focus,
+a.btn-color,
+a.btn-color:hover,
+a.btn-color:active,
+a.btn-color:focus {
+  background-color: #000;
+}
+
+.btn-border-color,
+a.btn-border-color,
+.btn-border-color-dark,
+a.btn-border-color-dark {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-border-color:hover,
+.btn-border-color:active,
+.btn-border-color:focus,
+a.btn-border-color:hover,
+a.btn-border-color:active,
+a.btn-border-color:focus,
+.btn-border-color-dark:hover,
+.btn-border-color-dark:active,
+.btn-border-color-dark:focus,
+a.btn-border-color-dark:hover,
+a.btn-border-color-dark:active,
+a.btn-border-color-dark:focus {
+  background-color: #000;
+}
+
+.form-control:focus {
+  border-color: #000;
+}
+
+.error .form-control:-moz-placeholder {
+  color: #000;
+}
+
+.error .form-control::-moz-placeholder {
+  color: #000;
+}
+
+.error .form-control:-ms-input-placeholder {
+  color: #000;
+}
+
+.error .form-control::-webkit-input-placeholder {
+  color: #000;
+}
+
+.form-control-color {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+#message-contact.error {
+  background-color: #000;
+}
+
+.ball-pulse-color > div {
+  border-color: #000;
+}
+
+.sidebar li:before {
+  background-color: #000;
+  border-color: #000;
+}
+
+.sidebar > li.active > a,
+.sidebar > li > a:hover {
+  color: #000;
+}
+
+.navbar-button span {
+  background-color: #000;
+}
+
+.progress-bar {
+  background-color: #000;
+}
+
+.portfolio-border {
+  border-color: #000;
+}
+
+.timeline .marker.filled:before {
+  background-color: #000;
+  border-color: #000;
+}
+
+.tweet:after {
+  border-color: #000;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  border-color: #000;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #000;
+}
+
+.owl-carousel a {
+  color: #000;
+}
