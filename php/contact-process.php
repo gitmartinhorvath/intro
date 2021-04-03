@@ -1,28 +1,20 @@
 <?php
 // Configure your Subject Prefix and Recipient here
-$subjectPrefix = '- porfolio - uiux';
-$emailTo       = 'martin.horvath@uiux.sk';
+$subjectPrefix = '- Intro - martinhorvath.sk';
+$emailTo       = 'info@martinhorvath.sk';
 
 $errors = array(); // array to hold validation errors
 $data   = array(); // array to pass back data
 
 if($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $name    = stripslashes(trim($_POST['name']));
+    
     $email   = stripslashes(trim($_POST['email']));
-    $message = stripslashes(trim($_POST['message']));
-
-
-    if (empty($name)) {
-        $errors['name'] = 'Prosím vyplňte pole Vaše meno. ';
-    }
-
+   
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = 'Zadali ste nesprávny email. ';
     }
 
-    if (empty($message)) {
-        $errors['message'] = 'Prosím vyplňte pole správy.';
-    }
+   
 
     // if there are any errors in our errors array, return a success boolean or false
     if (!empty($errors)) {
@@ -31,9 +23,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $subject = "Message from $subjectPrefix";
         $body    = '
-            <strong>Name: </strong>'.$name.'<br />
+            
             <strong>Email: </strong>'.$email.'<br />
-            <strong>Message: </strong>'.nl2br($message).'<br />
+            
         ';
 
         $headers  = "MIME-Version: 1.1" . PHP_EOL;

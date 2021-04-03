@@ -11,7 +11,7 @@
  + https://github.com/pinceladasdaweb/Ajax-Contact-Form
  */
 
-(function ($, window, document, undefined) {
+ (function ($, window, document, undefined) {
   'use strict';
 
   var form = $('#contact-form'),
@@ -30,9 +30,9 @@
 
     // get the form data
     var formData = {
-      'name': $('input[name="form-name"]').val(),
-      'email': $('input[name="form-email"]').val(),
-      'message': $('textarea[name="form-message"]').val()
+      
+      'email': $('input[name="form-email"]').val()
+      
     };
 
 
@@ -47,20 +47,14 @@
       // handle errors
       if (!data.success) {
 
-        if (data.errors.name) {
-          $('#name-field').addClass('error');
-          errorAll = data.errors.name;
-        }
+        
 
         if (data.errors.email) {
           $('#email-field').addClass('error');
           errorAll = errorAll + ' ' + data.errors.email;
         }
 
-        if (data.errors.message) {
-          $('#message-field').addClass('error');
-          errorAll = errorAll + ' ' + data.errors.message;
-        }
+        
         messageContainer.addClass('error');
         messageText.html(errorAll);
       } else {
