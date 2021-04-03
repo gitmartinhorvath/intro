@@ -125,7 +125,7 @@ $(document).ready(function () {
     if ($(".element").length) {
       $(function () {
         $(".element").typed({
-          strings: [" Ahoj, ", "ja som <br>Martin H. ", "a som <br> UI/UX<br> dizajnér."],
+          strings: [" Ahoj, <br>môj nový web " , " sa práve píše."],
           typeSpeed: 100,
           loop: true,
           backDelay: 2000
